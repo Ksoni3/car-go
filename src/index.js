@@ -6,12 +6,17 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import 'remixicon/fonts/remixicon.css'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-
 import { BrowserRouter as Router } from 'react-router-dom'
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
-  <Router>
-    <App />
-  </Router>,
+  <>
+    <Router>
+      <Header />
+      <App />
+      <Footer />
+    </Router>
+  </>,
 )
